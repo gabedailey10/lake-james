@@ -19,9 +19,14 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        'custom-bg': "url('/bg.jpeg')",
+        'custom-bg': "url('/night_courts.jpeg')",
         'custom-courts': "url('/courts3.jpg')",
         'custom-2': "url('/dronecourts.jpeg')",
+        'custom-grey' : "url('/bg.jpeg')",
+        'custom-nets' : "url('/nets.jpeg')",
+        'custom-dink' : "url('/dinking1.jpeg')",
+        'custom-band' : "url('/band.jpeg')",
+        'custom-event' : "url('/event1.jpeg')",
       },
       colors: {
         border: "hsl(var(--border))",

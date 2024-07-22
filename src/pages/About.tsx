@@ -4,10 +4,10 @@ import { Button } from "../../components/Button";
 import Image from "next/image";
 import { Footer } from "../../components/Footer";
 
-const About = () => {
+const about = () => {
   return (
     <div>
-      <div className="relative bg-custom-courts bg-cover h-screen w-full flex flex-col items-center ">
+      <div className="relative bg-custom-bg bg-cover h-screen w-full flex flex-col items-center ">
         <div className="absolute inset-0 bg-black opacity-40"></div>{" "}
         {/* Overlay */}
         <div className="relative z-10 w-full flex flex-col items-center">
@@ -68,7 +68,7 @@ const About = () => {
 
       <div className="w-full py-8 flex flex-col text-center items-center">
         <h1 className="text-3xl font-serif font-bold">Meet the Owners</h1>
-        <div className="w-4/5 bg-white flex flex-col items-center my-5 p-4 bg-custom-bg shadow-xl">
+        <div className="w-4/5 bg-white flex flex-col items-center my-5 p-4 bg-custom-grey shadow-xl">
           <div className="relative h-full w-full">
             <Image
               alt="craig"
@@ -88,7 +88,7 @@ const About = () => {
             pickleball. Join us for a game and some delicious food and drinks!
           </p>
         </div>
-        <div className="w-4/5 bg-white flex flex-col items-center my-5 p-4 bg-custom-bg shadow-xl">
+        <div className="w-4/5 bg-white flex flex-col items-center my-5 p-4 bg-custom-grey shadow-xl">
           <div className="relative h-full w-full">
             <Image
               alt="tyler"
@@ -116,4 +116,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default about;

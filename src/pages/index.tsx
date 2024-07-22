@@ -3,15 +3,16 @@ import { Nav } from "../../components/Nav";
 import { Button } from "../../components/Button";
 import Image from "next/image";
 import { Footer } from "../../components/Footer";
+import Link from "next/link";
 
 const Index = () => {
   return (
     <div className="w-screen flex flex-col">
-      <div className="w-screen h-screen bg-custom-bg bg-cover bg-centern flex flex-col">
+      <div className="w-screen h-screen bg-custom-grey bg-cover bg-centern flex flex-col">
         <Nav />
         <div className="my-32 h-1/4 flex flex-col justify-center items-center text-center py-8">
           <h1 className="text-4xl font-serif">Welcome To</h1>
-          <h2 className="text-4xl font-serif mb-4">PowerHouse Pickleball</h2>
+          <h2 className="text-4xl font-serif mb-4">Lake James Pickleball</h2>
           <p className="px-10 font-serif">
             Nestled conveniently behind Bones Jones restaurant and bar,
             PowerHouse Pickleball offers an engaging experience for pickleball
@@ -29,6 +30,14 @@ const Index = () => {
             >
               Reserve a court
             </a>
+          </Button>
+          <Button
+            asChild
+            className="text-lg bg-gradient-to-r from-violet-600 to-indigo-600 mt-16"
+          >
+            <Link href="/about">
+              Learn More
+              </Link>
           </Button>
         </div>
       </div>

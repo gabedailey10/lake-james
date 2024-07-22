@@ -17,22 +17,30 @@ const Nav = () => {
   };
 
   // Determine if the current path is the one where the text color should be different
-  const isDifferentPage = pathname === "/About"; // Change "/about" to the route where you want the different text color
+  const isDifferentPage = pathname === "/about"; // Change "/about" to the route where you want the different text color
 
   return (
-    <div className="w-full relative pb-8 pt-4">
+    <div className="w-full relative pb-8 pt-4 z-50">
       <ul className={classNames("flex justify-between items-center px-4 text-lg font-bold", { "text-black": !isDifferentPage, "text-white": isDifferentPage })}>
         <li>
-          <Image alt="logo" src="/picklelogo.jpg" width={60} height={40} />
+          <Link href="/">
+          <Image alt="logo" src="/logoLJP.jpeg" width={60} height={40} />
+          </Link>
         </li>
         <li className="hidden md:block">
           <Link href="/about">About</Link>
         </li>
         <li className="hidden md:block">
-          <Link href="/contact">Contact</Link>
+          <Link href="/gallery">Gallery</Link>
         </li>
         <li className="hidden md:block">
+        <a
+                href="https://www.facebook.com/profile.php?id=100094143582107"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
           <FaFacebook size={30} />
+          </a>
         </li>
         <li className="hidden md:block">
           <Button
@@ -67,7 +75,7 @@ const Nav = () => {
             <Link href="/About">About</Link>
           </li>
           <li className="py-8 ml-4 text-lg font-bold">
-            <Link href="/contact">Contact</Link>
+            <Link href="/gallery">Gallery</Link>
           </li>
           <li className="py-8 ml-4 text-lg font-bold">
             <FaFacebook size={30} />
