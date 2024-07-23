@@ -7,9 +7,11 @@ import Link from "next/link";
 const gallery = () => {
   return (
     <div className="min-h-screen w-full bg-white bg-cover flex flex-col items-center">
-      <Nav />
+      
       <header className="w-full bg-cover bg-center bg-custom-nets">
-        <div className="bg-black bg-opacity-50 w-full py-20 text-center">
+      
+        <div className="bg-black bg-opacity-50 w-full pb-20 text-center">
+        <Nav />
           <h1 className="font-bold text-4xl text-white">Gallery</h1>
         </div>
       </header>

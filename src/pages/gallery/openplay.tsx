@@ -25,9 +25,9 @@ const images = [
 const OpenPlay: React.FC = () => {
   return (
     <div className='flex flex-col'>
-      <Nav />
       <header className='w-full bg-cover bg-center bg-custom-nets mb-16'>
-        <div className='bg-black bg-opacity-50 w-full py-20 text-center'>
+        <div className='bg-black bg-opacity-50 w-full pb-20 text-center'>
+        <Nav />
           <h1 className='font-bold text-4xl text-white'>Open Play</h1>
         </div>
       </header>

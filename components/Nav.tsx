@@ -31,6 +31,9 @@ const Nav = () => {
           <Link href="/about">About</Link>
         </li>
         <li className="hidden md:block">
+          <Link href="/calendar">Event Calendar</Link>
+        </li>
+        <li className="hidden md:block">
           <Link href="/gallery">Gallery</Link>
         </li>
         <li className="hidden md:block">
@@ -58,7 +61,7 @@ const Nav = () => {
         </li>
         <li className="md:hidden">
           <button onClick={toggleMenu}>
-            <GiHamburgerMenu size={24} />
+            <GiHamburgerMenu size={24} color="white"/>
           </button>
         </li>
       </ul>
@@ -72,10 +75,13 @@ const Nav = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="py-8 ml-4 text-lg font-bold">
-            <Link href="/About">About</Link>
+            <Link href="/about">About</Link>
           </li>
           <li className="py-8 ml-4 text-lg font-bold">
             <Link href="/gallery">Gallery</Link>
+          </li>
+          <li className="py-8 ml-4 text-lg font-bold">
+            <Link href="/calendar">Event Calendar</Link>
           </li>
           <li className="py-8 ml-4 text-lg font-bold">
             <FaFacebook size={30} />
