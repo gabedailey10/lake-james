@@ -13,7 +13,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
         <Nav />
         <div className="relative z-10 my-32 h-1/4 flex flex-col justify-center items-center text-center py-8 md:w-1/2 mx-auto">
-          <h1 className="text-4xl font-serif text-white">Welcome To</h1>
+          <h1 className="text-4xl font-serif text-white mt-8 md:mt-0">Welcome To</h1>
           <h2 className="text-4xl font-serif mb-4 text-white">Lake James Pickleball</h2>
           <p className="px-10 font-serif text-lg text-white">
             Nestled conveniently behind Bones Jones restaurant and bar,
