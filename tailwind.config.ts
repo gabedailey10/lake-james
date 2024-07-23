@@ -27,6 +27,7 @@ const config = {
         'custom-dink' : "url('/dinking1.jpeg')",
         'custom-band' : "url('/band.jpeg')",
         'custom-event' : "url('/event1.jpeg')",
+        'custom-bd' : "url('/bd.jpg')",
       },
       colors: {
         border: "hsl(var(--border))",

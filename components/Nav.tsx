@@ -17,7 +17,7 @@ const Nav = () => {
   };
 
   // Determine if the current path is the one where the text color should be different
-  const isDifferentPage = pathname === "/about"; // Change "/about" to the route where you want the different text color
+  const isDifferentPage = pathname === "/about" || "/gallery/bonesjones" || "/gallery/openplay" || "/gallery" ||"gallery/pastevents"; // Change "/about" to the route where you want the different text color
 
   return (
     <div className="w-full relative pb-8 pt-4 z-50">

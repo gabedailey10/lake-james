@@ -4,16 +4,18 @@ import { Button } from "../../components/Button";
 import Image from "next/image";
 import { Footer } from "../../components/Footer";
 import Link from "next/link";
+import Memberships from "../../components/Memberships";
 
 const Index = () => {
   return (
     <div className="w-screen flex flex-col">
-      <div className="w-screen h-screen bg-custom-grey bg-cover bg-centern flex flex-col">
+      <div className="relative w-screen h-screen bg-custom-bg bg-cover bg-center flex flex-col">
+        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
         <Nav />
-        <div className="my-32 h-1/4 flex flex-col justify-center items-center text-center py-8">
-          <h1 className="text-4xl font-serif">Welcome To</h1>
-          <h2 className="text-4xl font-serif mb-4">Lake James Pickleball</h2>
-          <p className="px-10 font-serif">
+        <div className="relative z-10 my-32 h-1/4 flex flex-col justify-center items-center text-center py-8 md:w-1/2 mx-auto">
+          <h1 className="text-4xl font-serif text-white">Welcome To</h1>
+          <h2 className="text-4xl font-serif mb-4 text-white">Lake James Pickleball</h2>
+          <p className="px-10 font-serif text-lg text-white">
             Nestled conveniently behind Bones Jones restaurant and bar,
             PowerHouse Pickleball offers an engaging experience for pickleball
             enthusiasts of all levels. Our facility maintains 8 courts,
@@ -37,56 +39,57 @@ const Index = () => {
           >
             <Link href="/about">
               Learn More
-              </Link>
+            </Link>
           </Button>
         </div>
       </div>
-      <div className="h-full flex justify-center items-center flex-col text-center">
-        <Image src="/dinking1.jpeg" alt="dinking1" height={900} width={600} layout="responsive"/>
-        <p className="text-4xl font-serif my-16">
-          The best Pickleball community at Lake James.
+      <div className="h-full flex justify-center items-center flex-col text-center px-4 bg-gray-200">
+        <div className="flex flex-col md:flex-row justify-center items-center md:space-x-8 my-16">
+          <div className="flex flex-col w-1/2">
+            <p className="text-4xl md:text-7xl font-serif">
+              Lake James <span className="text-yellow-600"><br className="md:hidden" />Top Tier Pickleball Club</span>
+            </p>
+            <p className="text-xl">Whether you&apos;re a seasoned player or new to the game, Lake James Pickleball offers an engaging and vibrant community where you can enjoy the sport, make new friends, and participate in a variety of events. Our commitment to quality and excellence ensures that every visit to Lake James Pickleball is an exceptional experience.</p>
+          </div>
+          <div className="w-1/2 md:w-1/3 mt-8 md:mt-0">
+            <Image src="/dinking1.jpeg" alt="dinking1" width={200} height={200} layout="responsive" />
+          </div>
+        </div>
+        <p className="font-serif my-8 text-3xl md:text-7xl">
+          We Offer:
         </p>
-        <p className="font-serif my-16 text-3xl">
-          Our courts offer an experience like no other.
-        </p>
-        <Image
-          src="/dronecourts.jpeg"
-          alt="dronecourts"
-          height={900}
-          width={600}
-          layout="responsive"
-        />
-        <ul className="flex flex-row justify-between w-full px-8 mt-8 mb-16">
-          <li className="flex flex-col my-4 w-1/4 py-2 items-center">
+        <div className=" w-full relative flex flex-col md:flex-row justify-center items-center bg-custom-courts bg-cover bg-center h-screen px-6 ">
+          <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+          <div className="relative m-6 z-10 flex flex-col items-center bg-white shadow-lg p-6 rounded-lg hover:shadow-2xl transition-shadow duration-300">
             <Image
               src="/pickleicon1.jpg"
               alt="paddlelogo"
-              height={50}
-              width={50}
+              height={90}
+              width={90}
             />
-            <p className="text-lg">Engaging community at all skill levels.</p>
-          </li>
-          <li className="flex flex-col my-4 py-2 w-1/4 items-center">
+            <p className="text-lg md:text-2xl mt-4">Engaging community at all skill levels.</p>
+          </div>
+          <div className="relative z-10 m-6 flex flex-col items-center bg-white shadow-lg p-6 rounded-lg hover:shadow-2xl transition-shadow duration-300">
             <Image
               src="/courticon.jpg"
               alt="courticon"
-              height={50}
-              width={50}
+              height={90}
+              width={90}
             />
-            <p className="text-lg">Well maintained and high quality courts.</p>
-          </li>
-          <li className="flex flex-col my-4 py-2 w-1/4 items-center">
-            <Image src="/comm.jpg" alt="comm" height={50} width={50} />
-            <p className="text-lg">
-              Community events, live music, and more!
-            </p>
-          </li>
-        </ul>
-        <div className="flex flex-col justify-center items-center my-4 ">
-          <div className="shadow-lg">
-            <Image src="/bj.jpeg" alt="bj" width={600} height={900} layout="responsive" />
+            <p className="text-lg md:text-2xl mt-4">Well maintained and high quality courts.</p>
           </div>
-          <h1 className="text-xl font-bold my-10">
+          <div className="relative z-10 m-6 flex flex-col items-center bg-white shadow-lg p-6 rounded-lg hover:shadow-2xl transition-shadow duration-300">
+            <Image src="/comm.jpg" alt="comm" height={90} width={90} />
+            <p className="text-lg md:text-2xl mt-4">Community events, live music, and more!</p>
+          </div>
+        </div>
+        <div className="flex w-full items-center h-full ">
+        
+        </div>
+        <Memberships/>
+        <div className="flex flex-col justify-center items-center my-4 ">
+          <div className="my-6">
+        <h1 className="text-xl font-bold my-10 text-xxl md:text-3xl">
             Learn more about Bones Jones{" "}
           </h1>
           <a
@@ -94,11 +97,16 @@ const Index = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button>View the Menu</Button>
+            <Button className="text-xl bg-gradient-to-r from-violet-600 to-indigo-600">View the Menu</Button>
           </a>
+          </div>
+          <div className="shadow-lg">
+            <Image src="/bj.jpeg" alt="bj" width={600} height={900} layout="responsive" />
+          </div>
         </div>
+        <Footer />
       </div>
-      <Footer/>
+      
     </div>
   );
 };

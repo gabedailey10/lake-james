@@ -2,6 +2,7 @@ import React from 'react';
 import { Nav } from '../../../components/Nav';
 import { Footer } from '../../../components/Footer';
 import ImageGrid from '../../../components/ImageGrid';
+import Link from 'next/link';
 
 // Sample image URLs for filler content
 const images = [
