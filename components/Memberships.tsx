@@ -9,7 +9,7 @@ const memberships = () => {
         <h1 className="text-5xl font-bold mb-8 text-slate-700 mt-10">
           Membership Plans
         </h1>
-        <p className="text-xl text-slate-700 mb-16 mx-6 text-center w-1/2">
+        <p className="text-xl text-slate-700 mb-16 mx-6 text-center md:w-1/2">
           At Lake James Pickleball, you can enjoy our activities and programs at
           our location without needing a paid membership. However, we offer a
           membership option for those looking to enjoy discounted rates on Open

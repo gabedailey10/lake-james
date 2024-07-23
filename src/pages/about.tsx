@@ -8,7 +8,7 @@ import Link from "next/link";
 const about = () => {
   return (
     <div>
-      <div className="relative bg-custom-2 bg-cover h-screen w-full flex flex-col items-center ">
+      <div className="relative bg-custom-2 bg-cover bg-center h-screen w-full flex flex-col items-center ">
         <div className="absolute inset-0 bg-black opacity-40"></div>{" "}
         {/* Overlay */}
         <div className="relative z-10 w-full flex flex-col items-center">
